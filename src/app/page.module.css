@@ -1,0 +1,72 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f6f7fb;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0 0 0.5rem;
+  color: #4b5563;
+}
+
+.card label {
+  font-weight: 600;
+}
+
+.card textarea {
+  width: 100%;
+  min-height: 140px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.card textarea:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 1px;
+  border-color: #6366f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: #111827;
+  }
+
+  .card {
+    background: #111827;
+    border-color: #1f2937;
+    color: #f9fafb;
+  }
+
+  .card p {
+    color: #d1d5db;
+  }
+
+  .card textarea {
+    background: #030712;
+    color: #f9fafb;
+    border-color: #374151;
+  }
+}
